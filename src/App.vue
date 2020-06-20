@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <div id="page">Home</div>
+    <div id="page">{{2000010 | amountFormatter}}   </div>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'app',
+    created() {
+    }
+
+
+  }
+</script>
 
 <style lang="scss">
 #app {
@@ -10,13 +20,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #page {
   heigth: 60px;
   margin: 10px;
   font-size: 40px;
-  color: orange;
 }
 </style>
